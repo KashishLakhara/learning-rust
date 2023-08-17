@@ -2,7 +2,6 @@
 // However, you still have the option to make your variables mutable.
 
 fn main() {
-    
     /*
         let x = 5;
         println!("The value of x is: {x}");
@@ -22,9 +21,12 @@ fn main() {
 
     // Shadowing
     let x = x + 1;
+    // Note: This x is immutable after the transformation.
     {
         let x = x * 2;
         println!("The value of x in the inner scope is: {x}");
     }
     println!("The value of x is: {x}");
+
+    // Note: We can mutate a variable's type. To do so, we can use shadowing.
 }
